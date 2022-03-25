@@ -9,9 +9,9 @@ node 'master.puppet.vm' {
 }
 
 node /^web/ {
-  incdue role::app_server
+  include role::app_server
 }
 
 node /^db/ {
-  incdue role::dv_server
+  include role::dv_server
 } 
